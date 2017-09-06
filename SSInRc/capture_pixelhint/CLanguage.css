@@ -1,0 +1,141 @@
+#title{
+	text-align:center;
+}
+body{
+	background-image:linear-gradient(45deg,#4fa49a,#4361c2);
+	background-image:linear-gradient(45deg,#ffc700,#f9489e);
+}
+
+.mid-table {
+	margin-left:auto; 
+	margin-right:auto;
+	border:solid #D0D0D0 1px;
+	border-radius: 5px;
+	padding:5px;
+	text-align: left;
+}
+.mid-talbe tr,.mid-table th{
+	padding:5px 20px;
+	margin:0px;
+}
+.main{
+	text-align: center;
+	background-color:white;
+	border-radius: 1em;
+	width:800px;
+	margin:auto;
+}
+.inline{
+	display: inline-block;
+	text-align: left;
+	width: 100%;
+	margin-bottom:3em;
+}
+.cpp{
+	text-align:left;
+	width:45%;
+	margin-left:45px;
+	border-radius:0.5em;
+	display: inline-block;
+	box-sizing: border-box;
+	padding-left:13px;
+}
+#judge_code{
+	width:58%;
+	margin-left:5px;
+}
+#switchcase{
+	margin-left:-50px;
+	width:65%;
+}
+#switchcase_title{
+	font-size:135%;
+	font-family:'微軟正黑體';
+}
+#switchcase_content{
+	font-family:'微軟正黑體';
+	font-size:120%;
+}
+#for_code{
+	margin-left: 0px;
+	width:50%;
+}
+#while{
+	margin-left:5%;
+	margin-right:10%;
+	background-color:#001447;
+	border-radius:10px;
+	padding:10px 5%;
+}
+#dowhile{
+	background-color: #ff84b9;
+	border-radius:10px;
+	padding:10px 5%;
+}
+.while{
+	width:100%;
+	font-size:150%;
+	font-family:'微軟正黑體';
+	margin:auto;
+}
+code{
+	display: block;
+	text-align: left;
+	background-color:#D4D5D6;
+	border-radius: 0.5em;
+	padding:5px;
+	margin-left:3px;
+	float:left;
+}
+.right{
+	display: inline-block;
+	box-sizing: border-box;
+	text-align: left;
+	vertical-align: top;
+	margin-left:5%;
+}
+.chapter{
+	border-top: solid 1px #aaaaaa;
+	margin:30px;
+	padding:30px;
+}
+
+h1{
+	font-family: 'Faster One', cursive;
+	font-size:75px;
+	font-weight: bolder;
+	letter-spacing: 0.5em;
+	color:rgb(255,255,255);
+}
+h2{	
+	font-size: 50px;
+}
+.mandarin{
+	font-family:'微軟正黑體';
+}
+.English{
+	font-family: 'Righteous', cursive;
+	font-size: 50px;
+}
+#cacu_title{
+	font-family:'微軟正黑體';
+	text-align: center;
+}
+#cacu_2 tr,#cacu_2 th{
+	padding:5px 30px;
+	font-family:'微軟正黑體';
+}
+#judge_table tr,#judge_table th{
+	margin:auto;
+	padding:5px 8px;
+	border:#DDDDDD solid 1px;
+
+}
+.unselectable {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}

@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>松資C/C++講義</title>
+	<meta charset="utf-8">
+
+	<!--css-->
+	<link rel="stylesheet" type="text/css" href="CLanguage.css">
+
+	<!--fonts-->
+	<link href="https://fonts.googleapis.com/css?family=Faster+One" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Righteous" rel="stylesheet">
+
+    <!--tar logo-->
+    <link rel="icon" href="img/logo.png">
+
+
+
+
+</head>
+<body>
+
+<div id="title" class="unselectable">
+	<h1>SSInRC</h1>
+	<h1>C/C++</h1>
+</div>
+
+<div class="main">
+	<h2 class="mandarin unselectable" style="padding-top:30px;">輸出</h2>
+	
+	<div class="inline">
+		<div class="cpp" style="font-family:monospace;color: #006; border: 1px solid #d0d0d0; background-color: #f0f0f0;"><ol><li style="font-weight: normal; vertical-align:top;font: normal normal 130% 'Courier New', Courier, monospace; color: #003030;"><div style="font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;color: #000020;"><span style="color: #339900;">#include&lt;stdio.h&gt;</span></div></li>
+	<li style="font-weight: normal; vertical-align:top;font: normal normal 130% 'Courier New', Courier, monospace; color: #003030;"><div style="font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;color: #000020;"><span style="color: #0000ff;">int</span> main<span style="color: #008000;">&#40;</span><span style="color: #008000;">&#41;</span><span style="color: #008000;">&#123;</span></div></li>
+	<li style="font-weight: normal; vertical-align:top;font: normal normal 130% 'Courier New', Courier, monospace; color: #003030;"><div style="font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;color: #000020;">&nbsp; &nbsp; <span style="color: #0000dd;">printf</span><span style="color: #008000;">&#40;</span><span style="color: #FF0000;">&quot;SSInRC 29th!<span style="color: #000099; font-weight: bold;">\n</span>&quot;</span><span style="color: #008000;">&#41;</span><span style="color: #008080;">;</span></div></li>
+	<li style="font-weight: normal; vertical-align:top;font: normal normal 130% 'Courier New', Courier, monospace; color: #003030;"><div style="font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;color: #000020;">&nbsp; &nbsp; <span style="color: #0000ff;">return</span> <span style="color: #0000dd;">0</span><span style="color: #008080;">;</span></div></li>
+	<li style="font-weight: normal; vertical-align:top;font: normal normal 130% 'Courier New', Courier, monospace; color: #003030;"><div style="font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;color: #000020;"><span style="color: #008000;">&#125;</span></div></li>
+	</ol></div>
+
+
+		<span class="right">
+			<p class="mandarin">
+				基本輸出格式： <br>printf("輸出內容"); <br> 輸出內容請用雙引號""包起來<br> <br>附註："\n"為換行
+			</p>
+		</span>
+	</div>
+	<h3 class="mandarin" style="text-align: left;margin-left:45px;">閃一下就不見？</h3>
+	<div class="inline">
+		<div class="cpp" style="font-family:monospace;color: #006; border: 1px solid #d0d0d0; background-color: #f0f0f0;"><ol><li style="font-weight: normal; vertical-align:top;font: normal normal 130% 'Courier New', Courier, monospace; color: #003030;"><div style="font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;color: #000020;"><span style="color: #339900;">#include&lt;stdio.h&gt;</span></div></li>
+<li style="font-weight: normal; vertical-align:top;font: normal normal 130% 'Courier New', Courier, monospace; color: #003030;"><div style="font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;color: #000020;"><span style="color: #339900;">#include&lt;stdlib.h&gt;</span></div></li>
+<li style="font-weight: normal; vertical-align:top;font: normal normal 130% 'Courier New', Courier, monospace; color: #003030;"><div style="font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;color: #000020;"><span style="color: #0000ff;">int</span> main<span style="color: #008000;">&#40;</span><span style="color: #008000;">&#41;</span><span style="color: #008000;">&#123;</span></div></li>
+<li style="font-weight: normal; vertical-align:top;font: normal normal 130% 'Courier New', Courier, monospace; color: #003030;"><div style="font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;color: #000020;">&nbsp; &nbsp; <span style="color: #0000dd;">printf</span><span style="color: #008000;">&#40;</span><span style="color: #FF0000;">&quot;SSInRC 29th!<span style="color: #000099; font-weight: bold;">\n</span>&quot;</span><span style="color: #008000;">&#41;</span><span style="color: #008080;">;</span></div></li>
+<li style="font-weight: normal; vertical-align:top;font: normal normal 130% 'Courier New', Courier, monospace; color: #003030;"><div style="font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;color: #000020;">&nbsp; &nbsp; <span style="color: #0000dd;">system</span><span style="color: #008000;">&#40;</span><span style="color: #FF0000;">&quot;pause&quot;</span><span style="color: #008000;">&#41;</span><span style="color: #008080;">;</span></div></li>
+<li style="font-weight: normal; vertical-align:top;font: normal normal 130% 'Courier New', Courier, monospace; color: #003030;"><div style="font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;color: #000020;">&nbsp; &nbsp; <span style="color: #0000ff;">return</span> <span style="color: #0000dd;">0</span><span style="color: #008080;">;</span></div></li>
+<li style="font-weight: normal; vertical-align:top;font: normal normal 130% 'Courier New', Courier, monospace; color: #003030;"><div style="font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;color: #000020;"><span style="color: #008000;">&#125;</span></div></li>
+</ol></div>
+
+
+	<span class="right" >
+		<p class="mandarin">導入函式庫&lt;stdlib.h&gt; <br>再使用system pause  <br>即為Command Line中的 <br>「請按任意鍵繼續...」</p>
+
+	</span>
+
+	</div>
+
+
+	<div class="chapter">
+		<h2 class="mandarin unselectable">變數型態</h2>
+
+		<table class="mid-table">
+			
+			<tr>
+				<th>關鍵字</th>
+				<th>大小</th>
+				<th>用途&範圍</th>
+				<th>格式化字串</th>
+			</tr>
+			<tr>
+				<th><code>bool</code></th>
+				<th>1bytes</th>
+				<th>0 or 1表示true&false</th>
+				<th></th>
+			</tr>
+			<tr>
+				<th><code>int</code></th>
+				<th>4bytes</th>
+				<th>-2147483648~2147483648之正負整數</th>
+				<th>%d</th>
+			</tr>
+			<tr>
+				<th><code>char</code></th>
+				<th>1bytes</th>
+				<th>字元-128~127</th>
+				<th>%c</th>
+			</tr>
+			<tr>
+				<th><code>float</code></th>
+				<th>4bytes</th>
+				<th>2.939x10^−38~3.403x10^38之浮點數</th>
+				<th>%f</th>
+			</tr>
+			<tr>
+				<th><code>double</code></th>
+				<th>8bytes</th>
+				<th>5.563x10^−309~1.798x10^308之浮點數</th>
+				<th>%f</th>
+			</tr>
+			<tr>
+				<th><code>unsigned int</code></th>
+				<th>4bytes</th>
+				<th>0~4294967295之正整數</th>
+				<th>%u</th>
+			</tr>
+			<tr>
+				<th> <a href="https://zh.wikipedia.org/wiki/C%E8%AF%AD%E8%A8%80#.E6.95.B0.E6.8D.AE.E7.B1.BB.E5.9E.8B" target="_blank">⋮</a></th>
+				<th> <a href="https://zh.wikipedia.org/wiki/C%E8%AF%AD%E8%A8%80#.E6.95.B0.E6.8D.AE.E7.B1.BB.E5.9E.8B" target="_blank">⋮</a></th>
+				<th> <a href="https://zh.wikipedia.org/wiki/C%E8%AF%AD%E8%A8%80#.E6.95.B0.E6.8D.AE.E7.B1.BB.E5.9E.8B" target="_blank">⋮</a></th>
+				<th> <a href="https://zh.wikipedia.org/wiki/C%E8%AF%AD%E8%A8%80#.E6.95.B0.E6.8D.AE.E7.B1.BB.E5.9E.8B" target="_blank">⋮</a></th>
+			</tr>
+
+		</table>
+
+
+	</div>
+
+	
+	<div class="chapter">
+	<h2 class="mandarin unselectable" >輸入</h2>
+
+	<div class="inline">
+		<div class="cpp" style="font-family:monospace;color: #006; border: 1px solid #d0d0d0; background-color: #f0f0f0;"><ol><li style="font-weight: normal; vertical-align:top;font: normal normal 130% 'Courier New', Courier, monospace; color: #003030;"><div style="font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;color: #000020;"><span style="color: #339900;">#include&lt;stdio.h&gt;</span></div></li>
+<li style="font-weight: normal; vertical-align:top;font: normal normal 130% 'Courier New', Courier, monospace; color: #003030;"><div style="font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;color: #000020;"><span style="color: #0000ff;">int</span> main<span style="color: #008000;">&#40;</span><span style="color: #008000;">&#41;</span><span style="color: #008000;">&#123;</span></div></li>
+<li style="font-weight: normal; vertical-align:top;font: normal normal 130% 'Courier New', Courier, monospace; color: #003030;"><div style="font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;color: #000020;">&nbsp; &nbsp; <span style="color: #0000ff;">int</span> num<span style="color: #008080;">;</span></div></li>
+<li style="font-weight: normal; vertical-align:top;font: normal normal 130% 'Courier New', Courier, monospace; color: #003030;"><div style="font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;color: #000020;">&nbsp; &nbsp; <span style="color: #0000dd;">scanf</span><span style="color: #008000;">&#40;</span><span style="color: #FF0000;">&quot;%d&quot;</span>,<span style="color: #000040;">&amp;</span>num<span style="color: #008000;">&#41;</span><span style="color: #008080;">;</span></div></li>
+<li style="font-weight: normal; vertical-align:top;font: normal normal 130% 'Courier New', Courier, monospace; color: #003030;"><div style="font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;color: #000020;">&nbsp; &nbsp; <span style="color: #0000dd;">printf</span><span style="color: #008000;">&#40;</span><span style="color: #FF0000;">&quot;%d<span style="color: #000099; font-weight: bold;">\n</span>&quot;</span>,num<span style="color: #008000;">&#41;</span><span style="color: #008080;">;</span></div></li>
+<li style="font-weight: normal; vertical-align:top;font: normal normal 130% 'Courier New', Courier, monospace; color: #003030;"><div style="font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;color: #000020;">&nbsp; &nbsp; <span style="color: #0000ff;">return</span> <span style="color: #0000dd;">0</span><span style="color: #008080;">;</span></div></li>
+<li style="font-weight: normal; vertical-align:top;font: normal normal 130% 'Courier New', Courier, monospace; color: #003030;"><div style="font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;color: #000020;"><span style="color: #008000;">&#125;</span></div></li>
+</ol></div>
+
+		<span class="right mandarin">
+			<p>輸入輸出變數的基本格式 <br> 輸入：scanf("格式化字串", <span style="color:red;">&</span>變數名稱); <br>輸出：printf("格式化字串",變數名稱); </p>
+		</span>
+
+
+
+
+	</div>
+
+	</div>
+
+	<div class="chapter">
+	<h2 class="mandarin unselectable" >運算</h2>
+
+		<table style="width:75%;margin:auto;border:solid #DDDDDD 1px;border-radius:3px;" >
+			<tr>
+				<th class="madarin" style="border:solid #DDDDDD 1px;">加</th>
+				<th class="madarin" style="border:solid #DDDDDD 1px;">減</th>
+				<th class="madarin" style="border:solid #DDDDDD 1px;">乘</th>
+				<th class="madarin" style="border:solid #DDDDDD 1px;">除</th>
+				<th class="madarin" style="border:solid #DDDDDD 1px;">定值</th>
+				<th class="madarin" style="border:solid #DDDDDD 1px;">取餘數</th>
+			</tr>
+			<tr>
+				<th>+</th>
+				<th>-</th>
+				<th>*</th>
+				<th>/</th>
+				<th>=</th>
+				<th>%</th>
+			</tr>
+		</table>
+		
+		<h3 id="cacu_title" class="unselectable">省略用法</h3>
+
+		<table id="cacu_2" style="margin:auto;border:#DDDDDD 1px solid;border-radius: 5px">
+			<tr>
+				<th>原本</th>
+				<th>簡化</th>
+			</tr>
+			<tr>
+				<th><code>a=a+1</code></th>
+				<th><code>a++</code></th>
+			</tr>
+			<tr>
+				<th><code>a=a+2</code></th>
+				<th><code>a+=2</code></th>
+			</tr>
+			<tr>
+				<th><code>a=a-1</code></th>
+				<th><code>a--</code></th>
+			</tr>
+			<tr>
+				<th><code>a=a-2</code></th>
+				<th><code>a-=2</code></th>
+			</tr>
+			<tr>
+				<th><code>a=a*2</code></th>
+				<th><code>a*=2</code></th>
+			</tr>
+			<tr>
+				<th><code>a=a/2</code></th>
+				<th><code>a/=2</code></th>
+			</tr>
+			<tr>
+				<th><code>a=a%2</code></th>
+				<th><code>a%=2</code></th>
+			</tr>
+		</table>
+	</div>
+
+	<div class="chapter">
+	<h2 class="English unselectable" >If else</h2>
+
+		<h3 class="mandarin unselectable">關係運算式</h3>
+		
+		<table id="judge_table" style="margin:auto;margin-bottom:30px;">
+			<tr>
+				<th><code>==</code></th>
+				<th><code>!=</code></th>
+				<th><code>></code></th>
+				<th><code><</code></th>
+				<th><code>>=</code></th>
+				<th><code><=</code></th>
+				<th><code>!</code></th>
+				<th><code>&&</code></th>
+				<th><code>||</code></th>
+			</tr>
+			<tr>
+				<th>等於</th>
+				<th>不等於</th>
+				<th>大於</th>
+				<th>小於</th>
+				<th>大於等於</th>
+				<th>小於等於</th>
+				<th>(邏輯)反取</th>
+				<th>(邏輯)且</th>
+				<th>(邏輯)或</th>
+			</tr>
+		</table>
+
+		<div class="inline">
+			
+		<div id="judge_code" class="cpp" style="font-family:monospace;color: #006; border: 1px solid #d0d0d0; background-color: #f0f0f0;"><ol><li style="font-weight: normal; vertical-align:top;font: normal normal 130% 'Courier New', Courier, monospace; color: #003030;"><div style="font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;color: #000020;"><span style="color: #339900;">#include&lt;stdio.h&gt;</span></div></li>
+<li style="font-weight: normal; vertical-align:top;font: normal normal 130% 'Courier New', Courier, monospace; color: #003030;"><div style="font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;color: #000020;"><span style="color: #0000ff;">int</span> main<span style="color: #008000;">&#40;</span><span style="color: #008000;">&#41;</span><span style="color: #008000;">&#123;</span></div></li>
+<li style="font-weight: normal; vertical-align:top;font: normal normal 130% 'Courier New', Courier, monospace; color: #003030;"><div style="font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;color: #000020;">&nbsp; &nbsp; <span style="color: #0000ff;">int</span> score<span style="color: #008080;">;</span></div></li>
+<li style="font-weight: normal; vertical-align:top;font: normal normal 130% 'Courier New', Courier, monospace; color: #003030;"><div style="font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;color: #000020;">&nbsp; &nbsp; <span style="color: #0000dd;">scanf</span><span style="color: #008000;">&#40;</span><span style="color: #FF0000;">&quot;%d&quot;</span>,<span style="color: #000040;">&amp;</span>score<span style="color: #008000;">&#41;</span><span style="color: #008080;">;</span></div></li>
+<li style="font-weight: normal; vertical-align:top;font: normal normal 130% 'Courier New', Courier, monospace; color: #003030;"><div style="font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;color: #000020;">&nbsp; &nbsp; <span style="color: #0000ff;">if</span><span style="color: #008000;">&#40;</span>score<span style="color: #000080;">&gt;=</span><span style="color: #0000dd;">80</span><span style="color: #008000;">&#41;</span><span style="color: #008000;">&#123;</span></div></li>
+<li style="font-weight: normal; vertical-align:top;font: normal normal 130% 'Courier New', Courier, monospace; color: #003030;"><div style="font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;color: #000020;">&nbsp; &nbsp; &nbsp; &nbsp; <span style="color: #0000dd;">printf</span><span style="color: #008000;">&#40;</span><span style="color: #FF0000;">&quot;good<span style="color: #000099; font-weight: bold;">\n</span>&quot;</span><span style="color: #008000;">&#41;</span><span style="color: #008080;">;</span></div></li>
+<li style="font-weight: normal; vertical-align:top;font: normal normal 130% 'Courier New', Courier, monospace; color: #003030;"><div style="font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;color: #000020;">&nbsp; &nbsp; <span style="color: #008000;">&#125;</span></div></li>
+<li style="font-weight: normal; vertical-align:top;font: normal normal 130% 'Courier New', Courier, monospace; color: #003030;"><div style="font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;color: #000020;">&nbsp; &nbsp; <span style="color: #0000ff;">else</span> <span style="color: #0000ff;">if</span><span style="color: #008000;">&#40;</span>score<span style="color: #000080;">&lt;</span><span style="color: #0000dd;">80</span><span style="color: #000040;">&amp;&amp;</span>score<span style="color: #000080;">&gt;=</span><span style="color: #0000dd;">60</span><span style="color: #008000;">&#41;</span><span style="color: #008000;">&#123;</span></div></li>
+<li style="font-weight: normal; vertical-align:top;font: normal normal 130% 'Courier New', Courier, monospace; color: #003030;"><div style="font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;color: #000020;">&nbsp; &nbsp; &nbsp; &nbsp; <span style="color: #0000dd;">printf</span><span style="color: #008000;">&#40;</span><span style="color: #FF0000;">&quot;pass<span style="color: #000099; font-weight: bold;">\n</span>&quot;</span><span style="color: #008000;">&#41;</span><span style="color: #008080;">;</span></div></li>
+<li style="font-weight: normal; vertical-align:top;font: normal normal 130% 'Courier New', Courier, monospace; color: #003030;"><div style="font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;color: #000020;">&nbsp; &nbsp; <span style="color: #008000;">&#125;</span></div></li>
+<li style="font-weight: normal; vertical-align:top;font: normal normal 130% 'Courier New', Courier, monospace; color: #003030;"><div style="font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;color: #000020;">&nbsp; &nbsp; <span style="color: #0000ff;">else</span><span style="color: #008000;">&#123;</span></div></li>
+<li style="font-weight: normal; vertical-align:top;font: normal normal 130% 'Courier New', Courier, monospace; color: #003030;"><div style="font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;color: #000020;">&nbsp; &nbsp; &nbsp; &nbsp; <span style="color: #0000dd;">printf</span><span style="color: #008000;">&#40;</span><span style="color: #FF0000;">&quot;fail<span style="color: #000099; font-weight: bold;">\n</span>&quot;</span><span style="color: #008000;">&#41;</span><span style="color: #008080;">;</span></div></li>
+<li style="font-weight: normal; vertical-align:top;font: normal normal 130% 'Courier New', Courier, monospace; color: #003030;"><div style="font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;color: #000020;">&nbsp; &nbsp; <span style="color: #008000;">&#125;</span></div></li>
+<li style="font-weight: normal; vertical-align:top;font: normal normal 130% 'Courier New', Courier, monospace; color: #003030;"><div style="font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;color: #000020;">&nbsp; &nbsp; <span style="color: #0000ff;">return</span> <span style="color: #0000dd;">0</span><span style="color: #008080;">;</span></div></li>
+<li style="font-weight: normal; vertical-align:top;font: normal normal 130% 'Courier New', Courier, monospace; color: #003030;"><div style="font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;color: #000020;"><span style="color: #008000;">&#125;</span></div></li>
+</ol></div>
+
+	
+	<span class="right mandarin">
+		<p>If Else基本語法：	<br>if(執行條件){ <br>... <br>} <br> <br>else if(執行條件){ <br>... <br>}<br> <br>else{<br>...<br>} <br></p>
+	</span>
+
+		</div>
+
+	</div>
+
+
+
+	<div class="chapter">
+	<h2 class="English unselectable" >Switch Case</h2>
+
+	<div class="inline">
+		
+		<div id="switchcase" class="cpp" style="font-family:monospace;color: #006; border: 1px solid #d0d0d0; background-color: #f0f0f0;"><ol><li style="font-weight: normal; vertical-align:top;font: normal normal 130% 'Courier New', Courier, monospace; color: #003030;"><div style="font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;color: #000020;"><span style="color: #339900;">#include &lt;stdio.h&gt;</span></div></li>
+<li style="font-weight: normal; vertical-align:top;font: normal normal 130% 'Courier New', Courier, monospace; color: #003030;"><div style="font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;color: #000020;"><span style="color: #0000ff;">int</span> main<span style="color: #008000;">&#40;</span><span style="color: #008000;">&#41;</span><span style="color: #008000;">&#123;</span></div></li>
+<li style="font-weight: normal; vertical-align:top;font: normal normal 130% 'Courier New', Courier, monospace; color: #003030;"><div style="font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;color: #000020;">&nbsp; &nbsp; <span style="color: #0000ff;">char</span> c<span style="color: #008080;">;</span></div></li>
+<li style="font-weight: normal; vertical-align:top;font: normal normal 130% 'Courier New', Courier, monospace; color: #003030;"><div style="font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;color: #000020;">&nbsp; &nbsp; <span style="color: #0000ff;">int</span> num1,num2<span style="color: #008080;">;</span></div></li>
+<li style="font-weight: normal; vertical-align:top;font: normal normal 130% 'Courier New', Courier, monospace; color: #003030;"><div style="font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;color: #000020;">&nbsp; &nbsp; <span style="color: #0000dd;">scanf</span><span style="color: #008000;">&#40;</span><span style="color: #FF0000;">&quot;%d %c %d&quot;</span>,<span style="color: #000040;">&amp;</span>num1,<span style="color: #000040;">&amp;</span>c,<span style="color: #000040;">&amp;</span>num2<span style="color: #008000;">&#41;</span><span style="color: #008080;">;</span></div></li>
+<li style="font-weight: normal; vertical-align:top;font: normal normal 130% 'Courier New', Courier, monospace; color: #003030;"><div style="font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;color: #000020;">&nbsp; &nbsp; <span style="color: #0000ff;">switch</span><span style="color: #008000;">&#40;</span>c<span style="color: #008000;">&#41;</span><span style="color: #008000;">&#123;</span></div></li>
+<li style="font-weight: normal; vertical-align:top;font: normal normal 130% 'Courier New', Courier, monospace; color: #003030;"><div style="font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;color: #000020;">&nbsp; &nbsp; &nbsp; &nbsp; <span style="color: #0000ff;">case</span> <span style="color: #FF0000;">'+'</span><span style="color: #008080;">:</span></div></li>
+<li style="font-weight: normal; vertical-align:top;font: normal normal 130% 'Courier New', Courier, monospace; color: #003030;"><div style="font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;color: #000020;">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span style="color: #0000dd;">printf</span><span style="color: #008000;">&#40;</span><span style="color: #FF0000;">&quot;%d<span style="color: #000099; font-weight: bold;">\n</span>&quot;</span>,num1<span style="color: #000040;"~ezentity_gt+ezentity_lt~/span>num2<span style="color: #008000;">&#41;</span><span style="color: #008080;">;</span></div></li>
+<li style="font-weight: normal; vertical-align:top;font: normal normal 130% 'Courier New', Courier, monospace; color: #003030;"><div style="font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;color: #000020;">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span style="color: #0000ff;">break</span><span style="color: #008080;">;</span></div></li>
+<li style="font-weight: normal; vertical-align:top;font: normal normal 130% 'Courier New', Courier, monospace; color: #003030;"><div style="font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;color: #000020;">&nbsp; &nbsp; &nbsp; &nbsp; <span style="color: #0000ff;">case</span> <span style="color: #FF0000;">'-'</span><span style="color: #008080;">:</span></div></li>
+<li style="font-weight: normal; vertical-align:top;font: normal normal 130% 'Courier New', Courier, monospace; color: #003030;"><div style="font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;color: #000020;">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span style="color: #0000dd;">printf</span><span style="color: #008000;">&#40;</span><span style="color: #FF0000;">&quot;%d<span style="color: #000099; font-weight: bold;">\n</span>&quot;</span>,num1<span style="color: #000040;">-</span>num2<span style="color: #008000;">&#41;</span><span style="color: #008080;">;</span></div></li>
+<li style="font-weight: normal; vertical-align:top;font: normal normal 130% 'Courier New', Courier, monospace; color: #003030;"><div style="font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;color: #000020;">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span style="color: #0000ff;">break</span><span style="color: #008080;">;</span></div></li>
+<li style="font-weight: normal; vertical-align:top;font: normal normal 130% 'Courier New', Courier, monospace; color: #003030;"><div style="font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;color: #000020;">&nbsp; &nbsp; &nbsp; &nbsp; <span style="color: #0000ff;">case</span> <span style="color: #FF0000;">'*'</span><span style="color: #008080;">:</span></div></li>
+<li style="font-weight: normal; vertical-align:top;font: normal normal 130% 'Courier New', Courier, monospace; color: #003030;"><div style="font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;color: #000020;">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span style="color: #0000dd;">printf</span><span style="color: #008000;">&#40;</span><span style="color: #FF0000;">&quot;%d<span style="color: #000099; font-weight: bold;">\n</span>&quot;</span>,num1<span style="color: #000040;">*</span>num2<span style="color: #008000;">&#41;</span><span style="color: #008080;">;</span></div></li>
+<li style="font-weight: normal; vertical-align:top;font: normal normal 130% 'Courier New', Courier, monospace; color: #003030;"><div style="font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;color: #000020;">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span style="color: #0000ff;">break</span><span style="color: #008080;">;</span></div></li>
+<li style="font-weight: normal; vertical-align:top;font: normal normal 130% 'Courier New', Courier, monospace; color: #003030;"><div style="font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;color: #000020;">&nbsp; &nbsp; &nbsp; &nbsp; <span style="color: #0000ff;">case</span> <span style="color: #FF0000;">'/'</span><span style="color: #008080;">:</span></div></li>
+<li style="font-weight: normal; vertical-align:top;font: normal normal 130% 'Courier New', Courier, monospace; color: #003030;"><div style="font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;color: #000020;">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span style="color: #0000dd;">printf</span><span style="color: #008000;">&#40;</span><span style="color: #FF0000;">&quot;%d<span style="color: #000099; font-weight: bold;">\n</span>&quot;</span>,num1<span style="color: #000040;">/</span>num2<span style="color: #008000;">&#41;</span><span style="color: #008080;">;</span></div></li>
+<li style="font-weight: normal; vertical-align:top;font: normal normal 130% 'Courier New', Courier, monospace; color: #003030;"><div style="font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;color: #000020;">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span style="color: #0000ff;">break</span><span style="color: #008080;">;</span></div></li>
+<li style="font-weight: normal; vertical-align:top;font: normal normal 130% 'Courier New', Courier, monospace; color: #003030;"><div style="font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;color: #000020;">&nbsp; &nbsp; &nbsp; &nbsp; <span style="color: #0000ff;">default</span><span style="color: #008080;">:</span></div></li>
+<li style="font-weight: normal; vertical-align:top;font: normal normal 130% 'Courier New', Courier, monospace; color: #003030;"><div style="font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;color: #000020;">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span style="color: #0000dd;">printf</span><span style="color: #008000;">&#40;</span><span style="color: #FF0000;">&quot;Erro<span style="color: #000099; font-weight: bold;">\n</span>&quot;</span><span style="color: #008000;">&#41;</span><span style="color: #008080;">;</span></div></li>
+<li style="font-weight: normal; vertical-align:top;font: normal normal 130% 'Courier New', Courier, monospace; color: #003030;"><div style="font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;color: #000020;">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span style="color: #0000ff;">break</span><span style="color: #008080;">;</span></div></li>
+<li style="font-weight: normal; vertical-align:top;font: normal normal 130% 'Courier New', Courier, monospace; color: #003030;"><div style="font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;color: #000020;">&nbsp; &nbsp; <span style="color: #008000;">&#125;</span></div></li>
+<li style="font-weight: normal; vertical-align:top;font: normal normal 130% 'Courier New', Courier, monospace; color: #003030;"><div style="font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;color: #000020;">&nbsp; &nbsp; <span style="color: #0000ff;">return</span> <span style="color: #0000dd;">0</span><span style="color: #008080;">;</span></div></li>
+<li style="font-weight: normal; vertical-align:top;font: normal normal 130% 'Courier New', Courier, monospace; color: #003030;"><div style="font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;color: #000020;"><span style="color: #008000;">&#125;</span></div></li>
+</ol></div>
+
+
+	<span class="right">
+		<p id="switchcase_title">Switch Case基本語法：</p>
+		<pre id="switchcase_content">switch(判斷變數){
+	case 狀況1:
+		...
+		break;
+	case 狀況2:
+		...
+		break;
+	default:
+	 	...
+	 	break;
+	}
+		</pre>
+
+	</span>
+
+
+	</div>
+
+
+
+	</div>
+
+
+	<div class="chapter">
+	<h2 class="English unselectable" >For</h2>
+
+	<div class="inline">
+		
+	<div  id="for_code" class="cpp" style="font-family:monospace;color: #006; border: 1px solid #d0d0d0; background-color: #f0f0f0;"><ol><li style="font-weight: normal; vertical-align:top;font: normal normal 130% 'Courier New', Courier, monospace; color: #003030;"><div style="font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;color: #000020;"><span style="color: #339900;">#include &lt;stdio.h&gt;</span></div></li>
+<li style="font-weight: normal; vertical-align:top;font: normal normal 130% 'Courier New', Courier, monospace; color: #003030;"><div style="font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;color: #000020;"><span style="color: #0000ff;">int</span> main<span style="color: #008000;">&#40;</span><span style="color: #008000;">&#41;</span><span style="color: #008000;">&#123;</span></div></li>
+<li style="font-weight: normal; vertical-align:top;font: normal normal 130% 'Courier New', Courier, monospace; color: #003030;"><div style="font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;color: #000020;">&nbsp; &nbsp; <span style="color: #0000ff;">int</span> i<span style="color: #008080;">;</span></div></li>
+<li style="font-weight: normal; vertical-align:top;font: normal normal 130% 'Courier New', Courier, monospace; color: #003030;"><div style="font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;color: #000020;">&nbsp; &nbsp; <span style="color: #0000ff;">for</span><span style="color: #008000;">&#40;</span>i<span style="color: #000080;">=</span><span style="color: #0000dd;">0</span><span style="color: #008080;">;</span>i<span style="color: #000080;">&lt;</span><span style="color: #0000dd;">10</span><span style="color: #008080;">;</span>i<span style="color: #000040;">++</span><span style="color: #008000;">&#41;</span><span style="color: #008000;">&#123;</span></div></li>
+<li style="font-weight: normal; vertical-align:top;font: normal normal 130% 'Courier New', Courier, monospace; color: #003030;"><div style="font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;color: #000020;">&nbsp; &nbsp; &nbsp; &nbsp; <span style="color: #0000dd;">printf</span><span style="color: #008000;">&#40;</span><span style="color: #FF0000;">&quot;%d &quot;</span>,i<span style="color: #008000;">&#41;</span><span style="color: #008080;">;</span></div></li>
+<li style="font-weight: normal; vertical-align:top;font: normal normal 130% 'Courier New', Courier, monospace; color: #003030;"><div style="font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;color: #000020;">&nbsp; &nbsp; <span style="color: #008000;">&#125;</span></div></li>
+<li style="font-weight: normal; vertical-align:top;font: normal normal 130% 'Courier New', Courier, monospace; color: #003030;"><div style="font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;color: #000020;">&nbsp; &nbsp; <span style="color: #0000ff;">return</span> <span style="color: #0000dd;">0</span><span style="color: #008080;">;</span></div></li>
+<li style="font-weight: normal; vertical-align:top;font: normal normal 130% 'Courier New', Courier, monospace; color: #003030;"><div style="font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;color: #000020;"><span style="color: #008000;">&#125;</span></div></li>
+
+</ol></div>
+
+
+	<span class="mandarin right">
+		<p>For迴圈基本語法： <br>for(開始前執行 ; 條件 ; 結束執行){ <br> &nbsp;&nbsp;&nbsp;&nbsp;//迴圈內容... <br>}</p>
+		
+		<p>Ex:for(A;B;C){<br>&nbsp;&nbsp;&nbsp;&nbsp;D;<br>}<br>執行順序： <br>執行Ａ>判斷Ｂ>執行D>執行Ｃ>判斷B...</p>
+
+	</span>
+
+	</div>
+
+	</div>
+
+
+
+	<div class="chapter">
+	<h2 class="English unselectable" >While</h2>
+
+	<table class="while">
+		<tr>
+			<th id="while">
+			<h3 style="color:#eeeeee;">一般while迴圈</h3>
+            <pre style="text-align:left;color:#eeeeee">while(迴圈執行條件){
+    //迴圈內容
+}</pre>
+			</th>
+			<th id="dowhile">
+			<h3 style="color:#eeeeee;">do-while迴圈</h3>
+            <pre style="text-align:left;color:#eeeeee;">do{
+    //迴圈內容
+}while(繼續執行條件);</pre>
+			</th>
+		</tr>
+	</table>
+
+
+
+	</div>
+
+</body>
+</html>
